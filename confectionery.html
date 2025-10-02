@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confectionery - Mercy Glamour</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Mercy Glamour</h1>
+                </div>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="beauty.html">Beauty</a></li>
+                    <li><a href="confectionery.html" class="active">Confectionery</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="order.html" class="btn-order">Order Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header confection-header">
+        <div class="container">
+            <h1>Confectionery</h1>
+            <p>Handcrafted cakes, pastries & sweet treats</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-category="all">All Items</button>
+                <button class="filter-btn" data-category="cakes">Cakes</button>
+                <button class="filter-btn" data-category="pastries">Pastries</button>
+                <button class="filter-btn" data-category="cookies">Cookies</button>
+                <button class="filter-btn" data-category="custom">Custom Orders</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="confectionProducts">
+                <!-- Cakes -->
+                <div class="product-card" data-category="cakes">
+                    <div class="product-image">
+                        <img src="images/confection1.jpg" alt="Chocolate Dream Cake">
+                        <div class="product-overlay">
+                            <button class="btn-custom-order" data-product="Chocolate Dream Cake">Custom Order</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Chocolate Dream Cake</h3>
+                        <p class="product-category">Cakes</p>
+                        <p class="product-description">Rich chocolate layers with ganache frosting</p>
+                        <p class="product-price">From K350</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cakes">
+                    <div class="product-image">
+                        <img src="images/confection2.jpg" alt="Vanilla Elegance">
+                        <div class="product-overlay">
+                            <button class="btn-custom-order" data-product="Vanilla Elegance">Custom Order</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Vanilla Elegance</h3>
+                        <p class="product-category">Cakes</p>
+                        <p class="product-description">Classic vanilla with buttercream</p>
+                        <p class="product-price">From K300</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cakes">
+                    <div class="product-image">
+                        <img src="images/confection3.jpg" alt="Red Velvet Delight">
+                        <div class="product-overlay">
+                            <button class="btn-custom-order" data-product="Red Velvet Delight">Custom Order</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Red Velvet Delight</h3>
+                        <p class="product-category">Cakes</p>
+                        <p class="product-description">Moist red velvet with cream cheese frosting</p>
+                        <p class="product-price">From K380</p>
+                    </div>
+                </div>
+
+                <!-- Pastries -->
+                <div class="product-card" data-category="pastries">
+                    <div class="product-image">
+                        <img src="images/confection4.jpg" alt="Croissants">
+                        <div class="product-overlay">
+                            <button class="btn-custom-order" data-product="Croissants">Custom Order</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Butter Croissants</h3>
+                        <p class="product-category">Pastries</p>
+                        <p class="product-description">Flaky, buttery French pastries</p>
+                        <p class="product-price">K25 each</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pastries">
+                    <div class="product-image">
+                        <img src="images/confection5.jpg" alt="Fruit Tarts">
+                        <div class="product-overlay">
+                            <button class="btn-custom-order" data-product="Fruit Tarts">Custom Order</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Fruit Tarts</h3>
+                        <p class="product-category">Pastries</p>
+                        <p class="product-description">Fresh seasonal fruits on custard base</p>
+                        <p class="product-price">K45 each</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pastries">
+                    <div class="product-image">
+                        <img src="images/confection6.jpg" alt="Eclairs">
+                        <div class="product-overlay">
+                            <button class="btn-custom-order" data-product="Eclairs">Custom Order</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Chocolate Eclairs</h3>
+                        <p class="product-category">Pastries</p>
+                        <p class="product-description">Cream-filled with chocolate glaze</p>
+                        <p class="product-price">K35 each</p>
+                    </div>
+                </div>
+
+                <!-- Cookies -->
+                <div class="product-card" data-category="cookies">
+                    <div class="product-image">
+                        <img src="images/confection7.jpg" alt="Chocolate Chip Cookies">
+                        <div class="product-overlay">
+                            <button class="btn-custom-order" data-product="Chocolate Chip Cookies">Custom Order</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Chocolate Chip Cookies</h3>
+                        <p class="product-category">Cookies</p>
+                        <p class="product-description">Classic cookies with premium chocolate</p>
+                        <p class="product-price">K80 per dozen</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cookies">
+                    <div class="product-image">
+                        <img src="images/confection8.jpg" alt="Sugar Cookies">
+                        <div class="product-overlay">
+                            <button class="btn-custom-order" data-product="Sugar Cookies">Custom Order</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Decorated Sugar Cookies</h3>
+                        <p class="product-category">Cookies</p>
+                        <p class="product-description">Custom designs for any occasion</p>
+                        <p class="product-price">K120 per dozen</p>
+                    </div>
+                </div>
+
+                <!-- Custom Orders -->
+                <div class="product-card" data-category="custom">
+                    <div class="product-image">
+                        <img src="images/confection9.jpg" alt="Wedding Cake">
+                        <div class="product-overlay">
+                            <button class="btn-custom-order" data-product="Wedding Cake">Custom Order</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Wedding Cakes</h3>
+                        <p class="product-category">Custom Orders</p>
+                        <p class="product-description">Multi-tier custom designs for your special day</p>
+                        <p class="product-price">From K1500</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="custom">
+                    <div class="product-image">
+                        <img src="images/confection10.jpg" alt="Birthday Cake">
+                        <div class="product-overlay">
+                            <button class="btn-custom-order" data-product="Birthday Cake">Custom Order</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Birthday Cakes</h3>
+                        <p class="product-category">Custom Orders</p>
+                        <p class="product-description">Personalized designs for all ages</p>
+                        <p class="product-price">From K400</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cakes">
+                    <div class="product-image">
+                        <img src="images/confection11.jpg" alt="Carrot Cake">
+                        <div class="product-overlay">
+                            <button class="btn-custom-order" data-product="Carrot Cake">Custom Order</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Carrot Cake</h3>
+                        <p class="product-category">Cakes</p>
+                        <p class="product-description">Spiced cake with cream cheese frosting</p>
+                        <p class="product-price">From K320</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="pastries">
+                    <div class="product-image">
+                        <img src="images/confection12.jpg" alt="Cupcakes">
+                        <div class="product-overlay">
+                            <button class="btn-custom-order" data-product="Cupcakes">Custom Order</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Gourmet Cupcakes</h3>
+                        <p class="product-category">Pastries</p>
+                        <p class="product-description">Assorted flavors with decorative toppings</p>
+                        <p class="product-price">K150 per dozen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Order Modal -->
+    <div class="modal" id="customOrderModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeCustomOrder">&times;</button>
+            <h2>Custom Order Request</h2>
+            <p class="modal-subtitle">Customize your <span id="customProductName"></span></p>
+            <form id="customOrderForm">
+                <div class="form-group">
+                    <label for="orderName">Your Name</label>
+                    <input type="text" id="orderName" required>
+                </div>
+                <div class="form-group">
+                    <label for="orderEmail">Email Address</label>
+                    <input type="email" id="orderEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="orderPhone">Phone Number</label>
+                    <input type="tel" id="orderPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="orderDate">Delivery Date</label>
+                    <input type="date" id="orderDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="orderSize">Size/Servings</label>
+                    <select id="orderSize" required>
+                        <option value="">Select size</option>
+                        <option value="small">Small (8-10 servings)</option>
+                        <option value="medium">Medium (15-20 servings)</option>
+                        <option value="large">Large (25-30 servings)</option>
+                        <option value="xlarge">Extra Large (40+ servings)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="orderDetails">Special Requirements</label>
+                    <textarea id="orderDetails" rows="4" placeholder="Describe your custom design, flavors, colors, themes, dietary restrictions, etc."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Order Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mercy Glamour</h3>
+                    <p>Your destination for beauty and sweet indulgence</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="beauty.html">Beauty Products</a></li>
+                        <li><a href="confectionery.html">Confectionery</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="order.html">Place an Order</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +260 XXX XXX XXX</li>
+                        <li><i class="fas fa-envelope"></i> info@mercyglamour.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Lusaka, Zambia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mercy Glamour. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

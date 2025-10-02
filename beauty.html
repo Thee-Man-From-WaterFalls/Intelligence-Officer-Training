@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Products - Mercy Glamour</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Mercy Glamour</h1>
+                </div>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="beauty.html" class="active">Beauty</a></li>
+                    <li><a href="confectionery.html">Confectionery</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="order.html" class="btn-order">Order Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header beauty-header">
+        <div class="container">
+            <h1>Beauty Products</h1>
+            <p>Premium skincare, makeup & beauty essentials</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-category="all">All Products</button>
+                <button class="filter-btn" data-category="skincare">Skincare</button>
+                <button class="filter-btn" data-category="makeup">Makeup</button>
+                <button class="filter-btn" data-category="haircare">Haircare</button>
+                <button class="filter-btn" data-category="fragrance">Fragrance</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="beautyProducts">
+                <!-- Skincare Products -->
+                <div class="product-card" data-category="skincare">
+                    <div class="product-image">
+                        <img src="images/beauty1.jpg" alt="Radiant Glow Serum">
+                        <div class="product-overlay">
+                            <button class="btn-inquiry" data-product="Radiant Glow Serum">Inquire</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Radiant Glow Serum</h3>
+                        <p class="product-category">Skincare</p>
+                        <p class="product-description">Vitamin C enriched serum for bright, glowing skin</p>
+                        <p class="product-price">K250</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="skincare">
+                    <div class="product-image">
+                        <img src="images/beauty2.jpg" alt="Hydrating Face Cream">
+                        <div class="product-overlay">
+                            <button class="btn-inquiry" data-product="Hydrating Face Cream">Inquire</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Hydrating Face Cream</h3>
+                        <p class="product-category">Skincare</p>
+                        <p class="product-description">24-hour moisture lock with hyaluronic acid</p>
+                        <p class="product-price">K180</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="skincare">
+                    <div class="product-image">
+                        <img src="images/beauty3.jpg" alt="Gentle Cleansing Foam">
+                        <div class="product-overlay">
+                            <button class="btn-inquiry" data-product="Gentle Cleansing Foam">Inquire</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Gentle Cleansing Foam</h3>
+                        <p class="product-category">Skincare</p>
+                        <p class="product-description">Deep cleansing without stripping natural oils</p>
+                        <p class="product-price">K120</p>
+                    </div>
+                </div>
+
+                <!-- Makeup Products -->
+                <div class="product-card" data-category="makeup">
+                    <div class="product-image">
+                        <img src="images/beauty4.jpg" alt="Flawless Foundation">
+                        <div class="product-overlay">
+                            <button class="btn-inquiry" data-product="Flawless Foundation">Inquire</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Flawless Foundation</h3>
+                        <p class="product-category">Makeup</p>
+                        <p class="product-description">Full coverage, natural finish, 12 shades</p>
+                        <p class="product-price">K280</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="makeup">
+                    <div class="product-image">
+                        <img src="images/beauty5.jpg" alt="Velvet Matte Lipstick">
+                        <div class="product-overlay">
+                            <button class="btn-inquiry" data-product="Velvet Matte Lipstick">Inquire</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Velvet Matte Lipstick</h3>
+                        <p class="product-category">Makeup</p>
+                        <p class="product-description">Long-lasting, non-drying formula</p>
+                        <p class="product-price">K150</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="makeup">
+                    <div class="product-image">
+                        <img src="images/beauty6.jpg" alt="Eyeshadow Palette">
+                        <div class="product-overlay">
+                            <button class="btn-inquiry" data-product="Eyeshadow Palette">Inquire</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Eyeshadow Palette</h3>
+                        <p class="product-category">Makeup</p>
+                        <p class="product-description">18 highly pigmented shades</p>
+                        <p class="product-price">K320</p>
+                    </div>
+                </div>
+
+                <!-- Haircare Products -->
+                <div class="product-card" data-category="haircare">
+                    <div class="product-image">
+                        <img src="images/beauty7.jpg" alt="Nourishing Hair Oil">
+                        <div class="product-overlay">
+                            <button class="btn-inquiry" data-product="Nourishing Hair Oil">Inquire</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nourishing Hair Oil</h3>
+                        <p class="product-category">Haircare</p>
+                        <p class="product-description">Argan & coconut oil blend for silky hair</p>
+                        <p class="product-price">K200</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="haircare">
+                    <div class="product-image">
+                        <img src="images/beauty8.jpg" alt="Repair Shampoo">
+                        <div class="product-overlay">
+                            <button class="btn-inquiry" data-product="Repair Shampoo">Inquire</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Repair Shampoo</h3>
+                        <p class="product-category">Haircare</p>
+                        <p class="product-description">Restores damaged hair with keratin</p>
+                        <p class="product-price">K160</p>
+                    </div>
+                </div>
+
+                <!-- Fragrance Products -->
+                <div class="product-card" data-category="fragrance">
+                    <div class="product-image">
+                        <img src="images/beauty9.jpg" alt="Elegance Perfume">
+                        <div class="product-overlay">
+                            <button class="btn-inquiry" data-product="Elegance Perfume">Inquire</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Elegance Perfume</h3>
+                        <p class="product-category">Fragrance</p>
+                        <p class="product-description">Floral notes with vanilla undertones</p>
+                        <p class="product-price">K380</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fragrance">
+                    <div class="product-image">
+                        <img src="images/beauty10.jpg" alt="Body Mist">
+                        <div class="product-overlay">
+                            <button class="btn-inquiry" data-product="Body Mist">Inquire</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Body Mist</h3>
+                        <p class="product-category">Fragrance</p>
+                        <p class="product-description">Light, refreshing scent for all day</p>
+                        <p class="product-price">K140</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="skincare">
+                    <div class="product-image">
+                        <img src="images/beauty11.jpg" alt="Anti-Aging Night Cream">
+                        <div class="product-overlay">
+                            <button class="btn-inquiry" data-product="Anti-Aging Night Cream">Inquire</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Anti-Aging Night Cream</h3>
+                        <p class="product-category">Skincare</p>
+                        <p class="product-description">Reduces fine lines while you sleep</p>
+                        <p class="product-price">K290</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="makeup">
+                    <div class="product-image">
+                        <img src="images/beauty12.jpg" alt="Mascara Volume Plus">
+                        <div class="product-overlay">
+                            <button class="btn-inquiry" data-product="Mascara Volume Plus">Inquire</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mascara Volume Plus</h3>
+                        <p class="product-category">Makeup</p>
+                        <p class="product-description">Dramatic volume and length</p>
+                        <p class="product-price">K170</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry Modal -->
+    <div class="modal" id="inquiryModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeInquiry">&times;</button>
+            <h2>Product Inquiry</h2>
+            <p class="modal-subtitle">Interested in <span id="productName"></span>?</p>
+            <form id="inquiryForm">
+                <div class="form-group">
+                    <label for="inquiryName">Your Name</label>
+                    <input type="text" id="inquiryName" required>
+                </div>
+                <div class="form-group">
+                    <label for="inquiryEmail">Email Address</label>
+                    <input type="email" id="inquiryEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="inquiryPhone">Phone Number</label>
+                    <input type="tel" id="inquiryPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="inquiryMessage">Message</label>
+                    <textarea id="inquiryMessage" rows="4" placeholder="Tell us about your inquiry..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Inquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mercy Glamour</h3>
+                    <p>Your destination for beauty and sweet indulgence</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="beauty.html">Beauty Products</a></li>
+                        <li><a href="confectionery.html">Confectionery</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="order.html">Place an Order</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +260 XXX XXX XXX</li>
+                        <li><i class="fas fa-envelope"></i> info@mercyglamour.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Lusaka, Zambia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mercy Glamour. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

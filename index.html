@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercy Glamour - Beauty & Confectionery</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Mercy Glamour</h1>
+                </div>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="beauty.html">Beauty</a></li>
+                    <li><a href="confectionery.html">Confectionery</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="order.html" class="btn-order">Order Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Welcome to Mercy Glamour</h2>
+            <p class="hero-subtitle">Where Beauty Meets Sweetness</p>
+            <p class="hero-description">Discover our exquisite collection of beauty products and handcrafted confections</p>
+            <div class="hero-buttons">
+                <a href="beauty.html" class="btn btn-primary">Explore Beauty</a>
+                <a href="confectionery.html" class="btn btn-secondary">Discover Confections</a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <h2>Elevate Your Beauty & Indulge Your Senses</h2>
+                <p>At Mercy Glamour, we believe in the power of self-care and the joy of sweet indulgence. Our carefully curated beauty products enhance your natural radiance, while our artisan confections bring moments of pure delight.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Cards -->
+    <section class="category-section">
+        <div class="container">
+            <div class="category-grid">
+                <div class="category-card beauty-card">
+                    <div class="category-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Beauty Products</h3>
+                    <p>Premium skincare, makeup, and beauty essentials to enhance your natural glow</p>
+                    <a href="beauty.html" class="btn btn-outline">Shop Beauty</a>
+                </div>
+                <div class="category-card confection-card">
+                    <div class="category-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Confectionery</h3>
+                    <p>Handcrafted cakes, pastries, and sweet treats made with love and finest ingredients</p>
+                    <a href="confectionery.html" class="btn btn-outline">Shop Confections</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Slider -->
+    <section class="slider-section">
+        <div class="container">
+            <h2 class="section-title">Featured Collections</h2>
+            <div class="slider">
+                <div class="slider-container">
+                    <div class="slide active">
+                        <img src="images/slider1.jpg" alt="Beauty Collection">
+                        <div class="slide-caption">
+                            <h3>Radiant Skincare</h3>
+                            <p>Discover our premium skincare line</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/slider2.jpg" alt="Confection Collection">
+                        <div class="slide-caption">
+                            <h3>Sweet Delights</h3>
+                            <p>Handcrafted with love</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/slider3.jpg" alt="Makeup Collection">
+                        <div class="slide-caption">
+                            <h3>Glamorous Makeup</h3>
+                            <p>Enhance your natural beauty</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="images/slider4.jpg" alt="Custom Cakes">
+                        <div class="slide-caption">
+                            <h3>Custom Creations</h3>
+                            <p>Personalized cakes for every occasion</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn prev" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-btn next" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mercy Glamour</h3>
+                    <p>Your destination for beauty and sweet indulgence</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="beauty.html">Beauty Products</a></li>
+                        <li><a href="confectionery.html">Confectionery</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="order.html">Place an Order</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +260 XXX XXX XXX</li>
+                        <li><i class="fas fa-envelope"></i> info@mercyglamour.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Lusaka, Zambia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mercy Glamour. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

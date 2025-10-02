@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order - Mercy Glamour</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Mercy Glamour</h1>
+                </div>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="beauty.html">Beauty</a></li>
+                    <li><a href="confectionery.html">Confectionery</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="order.html" class="btn-order active">Order Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header order-header">
+        <div class="container">
+            <h1>Place Your Order</h1>
+            <p>Fill out the form below to order your products</p>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section class="order-form-section">
+        <div class="container">
+            <div class="order-form-wrapper">
+                <div class="order-form-container">
+                    <h2>Order Details</h2>
+                    <form id="orderForm">
+                        <!-- Personal Information -->
+                        <div class="form-section">
+                            <h3>Personal Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="fullName">Full Name *</label>
+                                    <input type="text" id="fullName" required>
+                                    <span class="error-message" id="fullNameError"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" required>
+                                    <span class="error-message" id="phoneError"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" required>
+                                <span class="error-message" id="emailOrderError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Delivery Address *</label>
+                                <textarea id="address" rows="3" required></textarea>
+                                <span class="error-message" id="addressError"></span>
+                            </div>
+                        </div>
+
+                        <!-- Product Selection -->
+                        <div class="form-section">
+                            <h3>Product Selection</h3>
+                            <div class="form-group">
+                                <label for="productCategory">Product Category *</label>
+                                <select id="productCategory" required>
+                                    <option value="">Select category</option>
+                                    <option value="beauty">Beauty Products</option>
+                                    <option value="confectionery">Confectionery</option>
+                                </select>
+                                <span class="error-message" id="categoryError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="productName">Product/Item *</label>
+                                <select id="productName" required disabled>
+                                    <option value="">Select a category first</option>
+                                </select>
+                                <span class="error-message" id="productError"></span>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="quantity">Quantity *</label>
+                                    <input type="number" id="quantity" min="1" value="1" required>
+                                    <span class="error-message" id="quantityError"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="deliveryDate">Preferred Delivery Date</label>
+                                    <input type="date" id="deliveryDate">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Additional Details -->
+                        <div class="form-section">
+                            <h3>Additional Details</h3>
+                            <div class="form-group">
+                                <label for="orderDetails">Special Instructions/Customization</label>
+                                <textarea id="orderDetails" rows="4" placeholder="Any special requirements, customization requests, or additional notes..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="imageUpload">Upload Reference Image (Optional)</label>
+                                <input type="file" id="imageUpload" accept="image/*">
+                                <p class="form-help">Upload a reference image for custom orders (max 5MB)</p>
+                                <div id="imagePreview" class="image-preview"></div>
+                            </div>
+                        </div>
+
+                        <!-- Payment Method -->
+                        <div class="form-section">
+                            <h3>Payment Method</h3>
+                            <div class="payment-options">
+                                <label class="radio-option">
+                                    <input type="radio" name="payment" value="cash" checked>
+                                    <span>Cash on Delivery</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="payment" value="mobile">
+                                    <span>Mobile Money</span>
+                                </label>
+                                <label class="radio-option">
+                                    <input type="radio" name="payment" value="bank">
+                                    <span>Bank Transfer</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-shopping-cart"></i> Place Order
+                            </button>
+                            <button type="reset" class="btn btn-secondary">
+                                <i class="fas fa-redo"></i> Reset Form
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Order Summary Sidebar -->
+                <div class="order-summary">
+                    <h3>Order Information</h3>
+                    <div class="summary-content">
+                        <div class="summary-item">
+                            <i class="fas fa-info-circle"></i>
+                            <div>
+                                <h4>How to Order</h4>
+                                <p>Fill out the form with your details and product selection. We'll contact you to confirm your order.</p>
+                            </div>
+                        </div>
+                        <div class="summary-item">
+                            <i class="fas fa-truck"></i>
+                            <div>
+                                <h4>Delivery</h4>
+                                <p>Free delivery within Lusaka for orders above K500. Delivery time: 1-3 business days.</p>
+                            </div>
+                        </div>
+                        <div class="summary-item">
+                            <i class="fas fa-credit-card"></i>
+                            <div>
+                                <h4>Payment</h4>
+                                <p>We accept cash on delivery, mobile money, and bank transfers. Payment details will be shared upon order confirmation.</p>
+                            </div>
+                        </div>
+                        <div class="summary-item">
+                            <i class="fas fa-headset"></i>
+                            <div>
+                                <h4>Support</h4>
+                                <p>Need help? Contact us at +260 XXX XXX XXX or email info@mercyglamour.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content success-modal">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Order Submitted Successfully!</h2>
+            <p>Thank you for your order. We'll contact you shortly to confirm the details.</p>
+            <button class="btn btn-primary" id="closeSuccess">Continue Shopping</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mercy Glamour</h3>
+                    <p>Your destination for beauty and sweet indulgence</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="beauty.html">Beauty Products</a></li>
+                        <li><a href="confectionery.html">Confectionery</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="order.html">Place an Order</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +260 XXX XXX XXX</li>
+                        <li><i class="fas fa-envelope"></i> info@mercyglamour.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Lusaka, Zambia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mercy Glamour. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
